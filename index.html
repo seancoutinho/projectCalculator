@@ -5,10 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator Project</title>
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
     <div class="container">
-        
+        <h1>CALCULATOR</h1>
+        <div class="calculator">
+            <div class="display">
+                <div data-previous-operand class="previous-display"></div>
+                <div data-current-operand class="current-display"></div>
+            </div>
+            <div class="upper-numbers">
+                <button data-number class='number' id="seven" data-value="7">7</button>
+                <button data-number class='number' id="eight" data-value="8">8</button>
+                <button data-number class='number' id="nine" data-value="9">9</button>
+                <button data-operation class='operator' id="divide" data-value="/">&divide</button>
+            </div>
+            <div class="mid-numbers">
+                <button data-number class='number' id="four" data-value="4">4</button>
+                <button data-number class='number' id="five" data-value="5">5</button>
+                <button data-number class='number' id="six" data-value="6">6</button>
+                <button data-operation class='operator' id="multiply" data-value="*">x</button>
+            </div>
+            <div class="lower-numbers">
+                <button data-number class='number' id="one" data-value="1">1</button>
+                <button data-number class='number' id="two" data-value="2">2</button>
+                <button data-number class='number' id="three" data-value="3">3</button>
+                <button data-operation class='operator' id="subtract" data-value="-">-</button>
+            </div>
+            <div class="other-operators">
+                <button data-number class='number' id="zero" data-value="0">0</button>
+                <button data-number class='number' id="point" data-value=".">.</button>
+                <button id="plus/minus">+-</button>
+                <button data-operation class='operator' id="add" data-value="+">+</button>
+            </div>
+            <div class="equals">
+                <button data-equals class='equals' data-value="equal">=</button>
+                <button data-clear class="clear" data-value="clear">CE</button>
+                <button data-delete class="delete">DEL</button>
+            </div>
+        </div>
     </div>
     <script src="./scripts/calculator.js"></script>
 </body>
